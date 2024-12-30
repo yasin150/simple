@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        *{
+            margin: 0px;}
+            
+        .container{
+            background-color: black(109, 109, 168);
+            border-radius: 6px;
+            display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+   
+
+
+        }
+        ul{
+            overflow: auto;
+            margin-top: auto;
+            display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+        }
+        li{
+            float: left;
+            list-style: none;
+            padding: 13px;
+            margin: 9px;
+            
+        }
+        .item{
+            float: right;
+            margin:  20px;
+            border: 3px solid black;
+            border-radius: 6px;
+            margin-top: 10px;
+    flex-grow: 1;
+    text-align: right;
+        }
+        
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color:green;
+        }
+        .box{
+            border: 2px solid black;
+            height: 260px;
+            width: 225px;
+            margin: 0px 50px;
+            background-color: rgb(174, 174, 236);
+            cursor: pointer;
+            border-radius: 10px;
+            color: white;
+            transition-property: background-color;
+            transition-duration: 10s;
+            box-shadow: 6px 6px;
+            text-shadow: 1px 1px red;
+            transform: skew(10deg);
+           
+            
+        }
+        .box:hover{
+            background-color: red;
+            color: black;
+            
+          
+        }
+        
+        .ali{
+            display: flex;
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            color: blue;
+        }
+        h1:hover{
+            color: green;
+        }
+        body{
+        background: url(web.png);
+        background-size: 100%;
+        }
+        h2{
+            text-align: center;
+            color: white;
+        }
+        a{
+            
+            font-size: 25px;
+            font-style: italic;
+        }
+        .whatsapp{
+            font-size: 50px;
+        }
+        .bablo{
+            height: 50px;
+            width: 70px;
+            margin-left: 70px;
+            margin-top: 15px;
+        }
+        div.main{
+            width: 400px;
+            margin: 100px auto 0px auto;
+            
+        }
+        h2{
+            text-align: center;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+        div.register{
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            font-size: 18px;
+            border-radius: 10px;
+            border: 10px solid rgba(255, 255, 255, 0.3);
+            color: #fff;
+        }
+        form#register{
+            margin: 40px;
+        }
+        label{
+            font-family: sans-serif;
+            font-size: 18px;
+            font-style: italic;
+        }
+        input#name{
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 3px;
+            padding: 7px;
+
+        }
+        input#submit{
+            width: 200px;
+            padding: 7px;
+            font-size: 16px;
+            font-family: sans-serif;
+            border: none;
+            border-radius: 3px;
+            background-color: rgba(250, 100, 0, 0.8);
+            text-align: center;
+        }
+        .waji{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            margin-left: 350px;
+            
+        }
+        .wajii{
+            display: inline-block;
+          }
+          @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul {
+        justify-content: center;
+        width: 100%;
+    }
+
+    li {
+        margin: 5px;
+    }
+
+    .item {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .ali {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    body {
+        background-size: cover;
+    }
+}
+
+    </style>
+</head>
+<body>
+    
+    <nav class="container">
+        <ul>
+            <li><a href="Home">Home</a></li>
+            <li><a href="contact">contact us</a> </li>
+            <li><a href="about">About</a> </li>
+            <li><a href="services">services</a> </li>
+            <div class="item">
+                <input type="text" placeholder="searching item">
+            </div>
+        </ul>
+       
+    </nav>
+    <h1>Web Development</h1>
+    <div class="ali">
+    <div class="box">
+        <img src="html.png" alt="no photo"  class="bablo">
+        <h2>HTML</h2>
+        <p>HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page.</p>
+    </div>
+    <div class="box">
+        <img src="css.png" alt="" class="bablo">
+        <h2>CSS</h2>
+        <p>Cascading Style Sheets”. CSS is a computer language for laying out and structuring web pages (HTML or XML). This language contains coding elements.</p>
+    </div>
+    <div class="box">
+        <img src="js.png" alt="" class="bablo">
+        <h2>JAVA SCRIPT</h2>
+        <p>JavaScript is a scripting or programming language that allows you to implement complex features on web pages</p>
+    </div>
+    <div class="box">
+        <img src="react.png" alt="" class="bablo">
+        <h2>REACT JS</h2>
+        <p>React because of its core feature, which is its ability to "react" or respond dynamically to changes in data</p>
+    </div>
+</div><br><br><br>
+<hr>
+<!-- <div class="main">
+    <div class="register">
+        <h2>Register Here</h2>
+            <form method="post" action="form.php" id="register" class="post">
+            <label >First Name:</label>
+            <br>
+            <input type="text" name="fname" id="name" placeholder="Enter your first name" >
+            <br><br>
+            <label >Last Name:</label>
+            <br>
+            <input type="text" name="lname" id="name" placeholder="Enter your last name" >
+            <br><br>
+            <label >Password:</label>
+            <br>
+            <input type="text" name="pname" id="name" placeholder="Enter your pasword" >
+            <label >Your Age:</label>
+            <br>
+            <input type="text" name="fname" id="name" placeholder="How old are You?" >
+            <br><br>
+            <label >Email:</label>
+            <br>
+            <input type="text" name="fname" id="name" placeholder="Enter your valid email" >
+            <br><br>
+            <label >Gender:</label>
+            <br>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender" id="male">
+            &nbsp;
+            <span id="male">Male</span>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender" id="female">
+            &nbsp;
+            <span id="female">Female</span>
+            <br><br>
+            <label >Known Language:</label>
+            <br>
+            &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="lang" id="hindi">
+            &nbsp;
+            <span id="hindi">Hindi</span>
+            &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="lang" id="Urdu">
+            &nbsp;
+            <span id="urdu">Urdu</span>
+            &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="lang" id="English">
+            &nbsp;
+            <span id="english">English</span>
+            <br><br>
+            <input type="submit" name="submit" id="submit" value="submit">
+         </form>
+     </div> -->
+     
+</div>
+<hr>
+<h1>Web Developer:Muhammad Yasin Bhatti</h1><br><br><br>
+<img src="whatsapp.jpg" alt="" class="waji" id="bhatti">
+<h2 class="wajii" id="bhatti">Contact on Whatsapp:0346-9081965</h2><br><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://wa.me/03469081965" class="whatsapp">Click Here For Contact</a>
+<hr>
+
+</body>
+</html>
